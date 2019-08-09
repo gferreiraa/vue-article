@@ -5,8 +5,12 @@
       alt="avatar-image"
     >
     <p><span>Name:</span> {{ characterList.name }}</p>
-    <p class="medium__item"><span>Status:</span> {{ characterList.status }}</p>
-    <p class="last__item"><span>Species:</span> {{ characterList.species }}</p>
+    <p class="medium__item">
+      <span>Status:</span> {{ characterList.status }}
+    </p>
+    <p class="last__item">
+      <span>Species:</span> {{ characterList.species }}
+    </p>
   </div>
 </template>
 
@@ -24,12 +28,8 @@ export default {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 20px;
-  /*padding: 25px;*/
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
 }
 
 img {
@@ -51,7 +51,4 @@ span {
   font-size: 14px;  
 }
 
-/* .card-container:hover {
-  transform: scale(1.05);
-} */
 </style>

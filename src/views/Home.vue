@@ -32,13 +32,9 @@ export default {
     })
   },
     methods: {
-      rangeCharacter() {
-        
+      rangeCharacter() {       
         const randomic = () => parseInt(Math.random() * (493 - 1) + 1)
-
         return Array(8).fill(0).reduce(item => [ ...item, randomic()], []).toString()
-        //const arrNumbers = arr.map(item => item + parseInt(Math.random() * (493 - 1) + 1))
-        //return arrNumbers.toString()
       }
     },
 };

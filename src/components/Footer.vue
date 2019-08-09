@@ -1,6 +1,11 @@
 <template>
   <div>
-    <p><b>2019</b> - Built with <span>❤</span> Vue and Netfly - <b>by gferreiraa</b></p>
+    <p>
+      <b>2019</b> - Built with <span>❤</span> Vue and Netlify - <a
+        href="https://gferreiraa.github.io/"
+        target="_blank"
+      ><b>by gferreiraa</b></a>
+    </p>
   </div>
 </template>
 
@@ -11,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  p {
+  p, a {
     color: #CAEE1E;
     margin: 30px 0 30px 0;
     font-size: 14px;

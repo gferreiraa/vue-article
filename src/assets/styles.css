@@ -9,7 +9,6 @@ body {
   
   }
 
-
 #app {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -20,29 +19,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
+  
   #main {
     flex: 1;
   }
 
   .card-list {
-    width: 85vw;
+    width: 60vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-gap: 20px;
-  }
-
-  h1 {
-      background: -webkit-linear-gradient(#FFF720, #3CD500);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: 'Bigelow Rules', cursive;
-      font-size: 7em;
-      margin-top: 30px;
-      margin-bottom: 0px;
-/*       background-image: -webkit-linear-gradient(#ff0ff8 0%, #f9f9f7 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-filter: drop-shadow(2px 2px 20px #f008b7); */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 25px;
+    justify-content: center;
   }
   
